@@ -1,0 +1,990 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\fswiss\fprq0\fcharset128 Arial;}{\f6\froman\fprq0\fcharset128 Arial;}{\f7\froman\fprq0\fcharset128 Courier New;}{\f8\froman\fprq0\fcharset128 Times New Roman;}{\f9\fnil\fprq2\fcharset0 Droid Sans Fallback;}{\f10\fnil\fprq2\fcharset0 FreeSans;}{\f11\fswiss\fprq0\fcharset128 FreeSans;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red128\green128\blue128;\red0\green0\blue1;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033 Normal;}
+{\s1\sbasedon16\snext1\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs36 Heading 1;}
+{\s2\sbasedon16\snext2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28 Heading 2;}
+{\s3\sbasedon16\snext3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28 Heading 3;}
+{\s4\sbasedon16\snext4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20 Heading 4;}
+{\s5\sbasedon16\snext5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20 Heading 5;}
+{\*\cs15\snext15 Default Paragraph Font;}
+{\s16\sbasedon0\snext17\sb240\sa120\keepn\dbch\af9\dbch\af10\afs28\loch\f4\fs28 Heading;}
+{\s17\sbasedon0\snext17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22 Text Body;}
+{\s18\sbasedon17\snext18\sl288\slmult1\qj\widctlpar\sb30\sa60\dbch\af11\fs22 List;}
+{\s19\sbasedon0\snext19\sb120\sa120\noline\i\dbch\af11\afs24\ai\fs24 Caption;}
+{\s20\sbasedon0\snext20\noline\dbch\af11 Index;}
+{\s21\sbasedon16\snext21\qc\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs32 Title;}
+{\s22\sbasedon16\snext22\qc\widctlpar\sb240\sa60\keepn\dbch\af9\dbch\af10\afs28\loch\f5\fs28 Subtitle;}
+{\s23\snext23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033 DenseText;}
+{\s24\sbasedon0\snext24\widctlpar\tqc\tx4320\tqr\tx8640\fs20 Header;}
+{\s25\sbasedon0\snext25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20 Footer;}
+{\s26\snext26\widctlpar\li360\ri0\lin360\rin0\fi0\sb120\sa60\keepn{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\b\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f6\fs20\lang1033 GroupHeader;}
+{\s27\snext27\widctlpar\li0\ri0\lin0\rin0\fi0\cbpat2{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f7\fs16\lang1033 Code Example 0;}
+{\s28\snext28\widctlpar\li360\ri0\lin360\rin0\fi0\cbpat2{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f7\fs16\lang1033 Code Example 1;}
+{\s29\snext29\widctlpar\li720\ri0\lin720\rin0\fi0\cbpat2{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f7\fs16\lang1033 Code Example 2;}
+{\s30\snext30\widctlpar\li1080\ri0\lin1080\rin0\fi0\cbpat2{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f7\fs16\lang1033 Code Example 3;}
+{\s31\snext31\widctlpar\li1440\ri0\lin1440\rin0\fi0\cbpat2{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f7\fs16\lang1033 Code Example 4;}
+{\s32\snext32\widctlpar\li1800\ri0\lin1800\rin0\fi0\cbpat2{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f7\fs16\lang1033 Code Example 5;}
+{\s33\snext33\widctlpar\li2160\ri0\lin2160\rin0\fi0\cbpat2{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f7\fs16\lang1033 Code Example 6;}
+{\s34\snext34\widctlpar\li2520\ri0\lin2520\rin0\fi0\cbpat2{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f7\fs16\lang1033 Code Example 7;}
+{\s35\snext35\widctlpar\li2880\ri0\lin2880\rin0\fi0\cbpat2{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f7\fs16\lang1033 Code Example 8;}
+{\s36\snext36\widctlpar\li3240\ri0\lin3240\rin0\fi0\cbpat2{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f7\fs16\lang1033 Code Example 9;}
+{\s37\snext37\qj\widctlpar\li0\ri0\lin0\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Continue 0;}
+{\s38\snext38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Continue 1;}
+{\s39\snext39\qj\widctlpar\li720\ri0\lin720\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Continue 2;}
+{\s40\snext40\qj\widctlpar\li1080\ri0\lin1080\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Continue 3;}
+{\s41\snext41\qj\widctlpar\li1440\ri0\lin1440\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Continue 4;}
+{\s42\snext42\qj\widctlpar\li1800\ri0\lin1800\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Continue 5;}
+{\s43\snext43\qj\widctlpar\li2160\ri0\lin2160\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Continue 6;}
+{\s44\snext44\qj\widctlpar\li2520\ri0\lin2520\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Continue 7;}
+{\s45\snext45\qj\widctlpar\li2880\ri0\lin2880\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Continue 8;}
+{\s46\snext46\qj\widctlpar\li3240\ri0\lin3240\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Continue 9;}
+{\s47\snext47\ql\widctlpar\li0\ri0\lin0\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 DescContinue 0;}
+{\s48\snext48\ql\widctlpar\li360\ri0\lin360\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 DescContinue 1;}
+{\s49\snext49\ql\widctlpar\li720\ri0\lin720\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 DescContinue 2;}
+{\s50\snext50\ql\widctlpar\li1080\ri0\lin1080\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 DescContinue 3;}
+{\s51\snext51\ql\widctlpar\li1440\ri0\lin1440\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 DescContinue 4;}
+{\s52\snext52\ql\widctlpar\li1800\ri0\lin1800\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 DescContinue 5;}
+{\s53\snext53\ql\widctlpar\li2160\ri0\lin2160\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 DescContinue 6;}
+{\s54\snext54\ql\widctlpar\li2520\ri0\lin2520\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 DescContinue 7;}
+{\s55\snext55\ql\widctlpar\li2880\ri0\lin2880\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 DescContinue 8;}
+{\s56\snext56\ql\widctlpar\li3240\ri0\lin3240\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 DescContinue 9;}
+{\s57\snext57\widctlpar\tldot\tqr\tx8640\li0\ri0\lin0\rin0\fi0\sb30\sa30{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 LatexTOC 0;}
+{\s58\snext58\widctlpar\tldot\tqr\tx9000\li360\ri0\lin360\rin0\fi0\sb27\sa27{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 LatexTOC 1;}
+{\s59\snext59\widctlpar\tldot\tqr\tx9360\li720\ri0\lin720\rin0\fi0\sb24\sa24{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 LatexTOC 2;}
+{\s60\snext60\widctlpar\tldot\tqr\tx9720\li1080\ri0\lin1080\rin0\fi0\sb21\sa21{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 LatexTOC 3;}
+{\s61\snext61\widctlpar\tldot\tqr\tx10080\li1440\ri0\lin1440\rin0\fi0\sb18\sa18{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 LatexTOC 4;}
+{\s62\snext62\widctlpar\tldot\tqr\tx10440\li1800\ri0\lin1800\rin0\fi0\sb15\sa15{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 LatexTOC 5;}
+{\s63\snext63\widctlpar\tldot\tqr\tx10800\li2160\ri0\lin2160\rin0\fi0\sb12\sa12{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 LatexTOC 6;}
+{\s64\snext64\widctlpar\tldot\tqr\tx11160\li2520\ri0\lin2520\rin0\fi0\sb9\sa9{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 LatexTOC 7;}
+{\s65\snext65\widctlpar\tldot\tqr\tx11520\li2880\ri0\lin2880\rin0\fi0\sb6\sa6{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 LatexTOC 8;}
+{\s66\snext66\widctlpar\tldot\tqr\tx11880\li3240\ri0\lin3240\rin0\fi0\sb3\sa3{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 LatexTOC 9;}
+{\s67\snext67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Bullet 0;}
+{\s68\snext68\widctlpar\tx1440\li720\ri0\lin720\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Bullet 1;}
+{\s69\snext69\widctlpar\tx2160\li1080\ri0\lin1080\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Bullet 2;}
+{\s70\snext70\widctlpar\tx2880\li1440\ri0\lin1440\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Bullet 3;}
+{\s71\snext71\widctlpar\tx3600\li1800\ri0\lin1800\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Bullet 4;}
+{\s72\snext72\widctlpar\tx4320\li2160\ri0\lin2160\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Bullet 5;}
+{\s73\snext73\widctlpar\tx5040\li2520\ri0\lin2520\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Bullet 6;}
+{\s74\snext74\widctlpar\tx5760\li2880\ri0\lin2880\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Bullet 7;}
+{\s75\snext75\widctlpar\tx6480\li3240\ri0\lin3240\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Bullet 8;}
+{\s76\snext76\widctlpar\tx7200\li3600\ri0\lin3600\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Bullet 9;}
+{\s77\snext77\widctlpar\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Enum 0;}
+{\s78\snext78\widctlpar\li720\ri0\lin720\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Enum 1;}
+{\s79\snext79\widctlpar\li1080\ri0\lin1080\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Enum 2;}
+{\s80\snext80\widctlpar\li1440\ri0\lin1440\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Enum 3;}
+{\s81\snext81\widctlpar\li1800\ri0\lin1800\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Enum 4;}
+{\s82\snext82\widctlpar\li2520\ri0\lin2520\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Enum 5;}
+{\s83\snext83\widctlpar\li2880\ri0\lin2880\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Enum 7;}
+{\s84\snext84\widctlpar\li3240\ri0\lin3240\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Enum 8;}
+{\s85\snext85\widctlpar\li3600\ri0\lin3600\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033 List Enum 9;}
+}{\*\listtable{\list\listtemplateid1
+{\listlevel\levelnfc0\leveljc0\levelstartat1\levelfollow0{\leveltext \'01\'00;}{\levelnumbers\'01;}\fi-360\li720}
+{\listlevel\levelnfc0\leveljc0\levelstartat1\levelfollow0{\leveltext \'02\'01.;}{\levelnumbers\'01;}\fi-360\li1080}
+{\listlevel\levelnfc0\leveljc0\levelstartat1\levelfollow0{\leveltext \'02\'02.;}{\levelnumbers\'01;}\fi-360\li1440}
+{\listlevel\levelnfc0\leveljc0\levelstartat1\levelfollow0{\leveltext \'02\'03.;}{\levelnumbers\'01;}\fi-360\li1800}
+{\listlevel\levelnfc0\leveljc0\levelstartat1\levelfollow0{\leveltext \'02\'04.;}{\levelnumbers\'01;}\fi-360\li2160}
+{\listlevel\levelnfc0\leveljc0\levelstartat1\levelfollow0{\leveltext \'02\'05.;}{\levelnumbers\'01;}\fi-360\li2520}
+{\listlevel\levelnfc0\leveljc0\levelstartat1\levelfollow0{\leveltext \'02\'06.;}{\levelnumbers\'01;}\fi-360\li2880}
+{\listlevel\levelnfc0\leveljc0\levelstartat1\levelfollow0{\leveltext \'02\'07.;}{\levelnumbers\'01;}\fi-360\li3240}
+{\listlevel\levelnfc0\leveljc0\levelstartat1\levelfollow0{\leveltext \'02\'08.;}{\levelnumbers\'01;}\fi-360\li3600}\listid1}
+{\list\listtemplateid2
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-432\li432}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-576\li576}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-720\li720}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-864\li864}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-1008\li1008}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-1152\li1152}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-1296\li1296}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-1440\li1440}
+{\listlevel\levelnfc255\leveljc0\levelstartat1\levelfollow2{\leveltext \'00;}{\levelnumbers;}\fi-1584\li1584}\listid2}
+}{\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}{\info{\title Lab0 A/D Converter}{\creatim\yr2016\mo4\dy7\hr10\min48}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67241986}}\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 2}}}
+\par }\pgdscnxt0 Default Style;}
+{\pgdsc1\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 5}}}
+\par }\pgdscnxt1 Converted1;}
+{\pgdsc2\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 6}}}
+\par }\pgdscnxt2 Converted2;}
+{\pgdsc3\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 7}}}
+\par }\pgdscnxt3 Converted3;}
+{\pgdsc4\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 8}}}
+\par }\pgdscnxt4 Converted4;}
+{\pgdsc5\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 9}}}
+\par }\pgdscnxt5 Converted5;}
+{\pgdsc6\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 3}}}
+\par }\pgdscnxt6 Converted6;}
+{\pgdsc7\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 4}}}
+\par }\pgdscnxt7 Converted7;}
+{\pgdsc8\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 5}}}
+\par }\pgdscnxt8 Converted8;}
+{\pgdsc9\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 5}}}
+\par }\pgdscnxt9 Converted9;}
+{\pgdsc10\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 8}}}
+\par }\pgdscnxt10 Converted10;}
+{\pgdsc11\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 9}}}
+\par }\pgdscnxt11 Converted11;}
+{\pgdsc12\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 9}}}
+\par }\pgdscnxt12 Converted12;}
+{\pgdsc13\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 10}}}
+\par }\pgdscnxt13 Converted13;}
+{\pgdsc14\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 11}}}
+\par }\pgdscnxt14 Converted14;}
+{\pgdsc15\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 12}}}
+\par }\pgdscnxt15 Converted15;}
+{\pgdsc16\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 13}}}
+\par }\pgdscnxt16 Converted16;}
+{\pgdsc17\pgdscuse451\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 14}}}
+\par }\pgdscnxt17 Converted17;}}
+\formshade{\*\pgdscno0}\paperh15840\paperw12240\margl1800\margr1800\margt1440\margb720\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20\qr\widctlpar\tqc\tx4320\tqr\tx8640{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 2}}}
+\par }\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s1\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs36\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Class Documentation}
+\par \pard\plain \s2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+adc Class Reference}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{\*\bkmkstart AAAAAAAAAP}{\*\bkmkend AAAAAAAAAP}{\*\bkmkstart AAAAAAAAAP}{\*\bkmkend AAAAAAAAAP}\rtlch \ltrch\loch
+
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This class will run the A/D converter on an AVR processor. }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include <adc.h>}
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Public Member Functions}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\b\rtlch \ltrch\loch\lang1033\loch\f8
+adc}{\rtlch \ltrch\loch\lang1033\loch\f8
+ (emstream *=NULL)}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb30\sa60{\i\rtlch \ltrch\loch\lang1033\loch\f8
+This constructor sets up an A/D converter. }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+uint16_t }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+read_once}{\rtlch \ltrch\loch\lang1033\loch\f8
+ (uint8_t)}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb30\sa60{\i\rtlch \ltrch\loch\lang1033\loch\f8
+This method takes one A/D reading from the given channel and returns it. }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+uint16_t }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+read_oversampled}{\rtlch \ltrch\loch\lang1033\loch\f8
+ (uint8_t, uint8_t)}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb30\sa60{\i\rtlch \ltrch\loch\lang1033\loch\f8
+This method takes mulitiple A/D readings and takes the average. }
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Protected Attributes}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+emstream * }{\b\rtlch \ltrch\loch\lang1033\loch\f8{\*\bkmkstart AAAAAAAAAQ}{\*\bkmkend AAAAAAAAAQ}
+ptr_to_serial}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb30\sa60{\i\rtlch \ltrch\loch\lang1033\loch\f8
+The ADC class uses this pointer to the serial port to say hello. }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Detailed Description}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This class will run the A/D converter on an AVR processor. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This class contains methods that utilize the A/D converter on the AVR to sample one conversion or the average of multiple samples. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 46 of file adc.h.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Constructor & Destructor Documentation}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+adc::adc (emstream * }{\i\rtlch \ltrch\loch\lang1033
+p_serial_port}{\rtlch \ltrch\loch\lang1033
+ = }{\rtlch \ltrch\loch\lang1033\loch\f7
+NULL}{\rtlch \ltrch\loch\lang1033
+)}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb240\sa60{\*\bkmkstart AAAAAAAAAR}{\*\bkmkend AAAAAAAAAR}{\*\bkmkstart AAAAAAAAAR}{\*\bkmkend AAAAAAAAAR}\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This constructor sets up an A/D converter. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+The A/D is made ready so that when a method such as }{\b\rtlch \ltrch\loch\lang1033\loch\f7
+read_once()}{\rtlch \ltrch\loch\lang1033\loch\f8
+  is called, correct A/D conversions can be performed. }
+\par \pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Parameters:}
+\par \trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+p_serial_port}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+A pointer to the serial port which writes debugging info. }\cell\row\pard\pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 39 of file adc.cpp.}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+References ptr_to_serial.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\b\rtlch \ltrch\loch\fs20\lang1033\loch\f6
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Member Function Documentation}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+uint16_t adc::read_once (uint8_t }{\i\rtlch \ltrch\loch\lang1033
+channel}{\rtlch \ltrch\loch\lang1033
+)}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb240\sa60{\*\bkmkstart AAAAAAAAAS}{\*\bkmkend AAAAAAAAAS}{\*\bkmkstart AAAAAAAAAS}{\*\bkmkend AAAAAAAAAS}\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This method takes one A/D reading from the given channel and returns it. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Reads from channel 1, waits for conversion to finish, outputs the conversion }
+\par \pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Parameters:}
+\par \trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+channel}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+The A/D channel which is being read must be from 0 to 7 }\cell\cell\row\pard\pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Returns:}
+\par \pard\plain \s49\ql\widctlpar\li720\ri0\lin720\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f8
+The result of the A/D conversion }
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 58 of file adc.cpp.}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Referenced by read_oversampled(), and task_brightness::run().}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+uint16_t adc::read_oversampled (uint8_t }{\i\rtlch \ltrch\loch\lang1033
+channel}{\rtlch \ltrch\loch\lang1033
+, uint8_t }{\i\rtlch \ltrch\loch\lang1033
+samples}{\rtlch \ltrch\loch\lang1033
+)}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb240\sa60{\*\bkmkstart AAAAAAAAAT}{\*\bkmkend AAAAAAAAAT}{\*\bkmkstart AAAAAAAAAT}{\*\bkmkend AAAAAAAAAT}\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This method takes mulitiple A/D readings and takes the average. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Reads n A/D conversion samples and takes the average. It also checks for overflow each time a new sample is read. Once the given number of samples is reached or adding the next sample creates overflow, the average is computed and returned }
+\par \pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Parameters:}
+\par \trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+channel}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+The A/D channel which is being read. Must be from 0:7 }\cell\cell\row\pard\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+samples}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+The number of samples to be read }\cell\row\pard\pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Returns:}
+\par \pard\plain \s49\ql\widctlpar\li720\ri0\lin720\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f8
+The result of the A/D conversion average }
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 89 of file adc.cpp.}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+References ptr_to_serial, and read_once().}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Referenced by task_brightness::run().}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\b\rtlch \ltrch\loch\fs20\lang1033\loch\f6
+
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+The documentation for this class was generated from the following files:}
+\par \pard\plain \s68\widctlpar\tx1440\li720\ri0\lin720\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033{\listtext\pard\plain  1\tab}\ilvl0\ls1 \li1440\ri0\lin1440\rin0\fi-360\tx1440{\b\rtlch \ltrch\loch\lang1033\loch\f8
+adc.h}
+\par \pard\plain \s68\widctlpar\tx1440\li720\ri0\lin720\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033{\listtext\pard\plain  2\tab}\ilvl0\ls1 \li1440\ri0\lin1440\rin0\fi-360\tx1440{\b\rtlch \ltrch\loch\lang1033\loch\f8
+adc.cpp}
+\par \qr\widctlpar\tqc\tx4320\tqr\tx8640\pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60\rtlch \ltrch\loch\lang1033
+
+\par \sect\sectd\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720\pgndec\sbkpage\footery1440{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 4}}}
+\par }\pard\plain \s2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+task_brightness Class Reference}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{\*\bkmkstart AAAAAAAAAU}{\*\bkmkend AAAAAAAAAU}{\*\bkmkstart AAAAAAAAAU}{\*\bkmkend AAAAAAAAAU}\rtlch \ltrch\loch
+
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This task controls the brightness of an LED using an analog input from the A/D converter. }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include <task_brightness.h>}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Public Member Functions}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_brightness}{\rtlch \ltrch\loch\lang1033\loch\f8
+ (const char *, unsigned portBASE_TYPE, size_t, emstream *)}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+void }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+run}{\rtlch \ltrch\loch\lang1033\loch\f8
+ (void)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Detailed Description}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This task controls the brightness of an LED using an analog input from the A/D converter. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+The A/D converter is run using a driver in files }{\b\rtlch \ltrch\loch\lang1033\loch\f7
+adc.h}{\rtlch \ltrch\loch\lang1033\loch\f8
+  and }{\b\rtlch \ltrch\loch\lang1033\loch\f7
+adc.cpp}{\rtlch \ltrch\loch\lang1033\loch\f8
+ . Code in this task sets up a timer/counter in PWM mode and controls the LED's average brightness. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 60 of file task_brightness.h.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Constructor & Destructor Documentation}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+task_brightness::task_brightness (const char * }{\i\rtlch \ltrch\loch\lang1033
+a_name}{\rtlch \ltrch\loch\lang1033
+, unsigned portBASE_TYPE }{\i\rtlch \ltrch\loch\lang1033
+a_priority}{\rtlch \ltrch\loch\lang1033
+, size_t }{\i\rtlch \ltrch\loch\lang1033
+a_stack_size}{\rtlch \ltrch\loch\lang1033
+, emstream * }{\i\rtlch \ltrch\loch\lang1033
+p_ser_dev}{\rtlch \ltrch\loch\lang1033
+)}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb240\sa60{{\*\bkmkstart AAAAAAAAAV}{\*\bkmkend AAAAAAAAAV}\rtlch \ltrch\loch\lang1033\loch\f8
+This constructor creates a task which controls the brightness of an LED using input from an A/D converter. The main job of this constructor is to call the constructor of parent class (}{\rtlch \ltrch\loch\lang1033\loch\f7
+frt_task}{\rtlch \ltrch\loch\lang1033\loch\f8
+  ); the parent's constructor the work. }
+\par \pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\li360\ri0\lin360\rin0\fi0\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Parameters:}
+\par \trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+a_name}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+A character string which will be the name of this task }\cell\cell\row\pard\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+a_priority}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+The priority at which this task will initially run (default: 0) }\cell\row\pard\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+a_stack_size}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+The size of this task's stack in bytes (default: configMINIMAL_STACK_SIZE) }\cell\row\pard\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+p_ser_dev}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+Pointer to a serial device (port, radio, SD card, etc.) which can be used by this task to communicate (default: NULL) }\cell\row\pard\pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 49 of file task_brightness.cpp.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\b\rtlch \ltrch\loch\fs20\lang1033\loch\f6
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Member Function Documentation}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+void task_brightness::run (void )}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb240\sa60{{\*\bkmkstart AAAAAAAAAW}{\*\bkmkend AAAAAAAAAW}\rtlch \ltrch\loch\lang1033\loch\f8
+This method is called once by the RTOS scheduler. Each time around the for (;;) loop, it reads the A/D converter and uses the result to control the brightness of an LED. }
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 67 of file task_brightness.cpp.}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+References adc::read_once(), and adc::read_oversampled().}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\b\rtlch \ltrch\loch\fs20\lang1033\loch\f6
+
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+The documentation for this class was generated from the following files:}
+\par \pard\plain \s68\widctlpar\tx1440\li720\ri0\lin720\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033{\listtext\pard\plain  3\tab}\ilvl0\ls1 \li1440\ri0\lin1440\rin0\fi-360\tx1440{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_brightness.h}
+\par \pard\plain \s68\widctlpar\tx1440\li720\ri0\lin720\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033{\listtext\pard\plain  4\tab}\ilvl0\ls1 \li1440\ri0\lin1440\rin0\fi-360\tx1440{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_brightness.cpp}
+\par \qr\widctlpar\tqc\tx4320\tqr\tx8640\pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60\rtlch \ltrch\loch
+
+\par \sect\sectd\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720\pgndec\sbkpage\footery1440{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 5}}}
+\par }\pard\plain \s1\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs36\sb240\sa60{\rtlch \ltrch\loch\lang1033
+File Documentation}
+\par \pard\plain \s2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+adc.cpp File Reference}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{{\*\bkmkstart AAAAAAAAAA}{\*\bkmkend AAAAAAAAAA}\rtlch \ltrch\loch\lang1033\loch\f7
+#include <stdlib.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include <avr/io.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "rs232int.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "adc.h"}
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Functions}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+emstream & }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+operator<<}{\rtlch \ltrch\loch\lang1033\loch\f8
+ (emstream &serpt, }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+adc}{\rtlch \ltrch\loch\lang1033\loch\f8
+ &a2d)}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb30\sa60{\i\rtlch \ltrch\loch\lang1033\loch\f8
+This overloaded operator prints A/D values. }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Detailed Description}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This file contains a very simple A/D converter driver. This driver should be}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Revisions: }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+01-15-2008 JRR Original (somewhat useful) file }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-11-2012 JRR Less original, more useful file with FreeRTOS mutex added }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-12-2012 JRR There was a bug in the mutex code, and it has been fixed}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+License: This file is copyright 2015 by JR Ridgely and released under the Lesser GNU Public License, version 2. It intended for educational use only, but its use is not limited thereto. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition in file }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+adc.cpp}{\rtlch \ltrch\loch\lang1033\loch\f8
+.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Function Documentation}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+emstream& operator<< (emstream & }{\i\rtlch \ltrch\loch\lang1033
+serpt}{\rtlch \ltrch\loch\lang1033
+, adc & }{\i\rtlch \ltrch\loch\lang1033
+a2d}{\rtlch \ltrch\loch\lang1033
+)}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb240\sa60{\*\bkmkstart AAAAAAAAAB}{\*\bkmkend AAAAAAAAAB}{\*\bkmkstart AAAAAAAAAB}{\*\bkmkend AAAAAAAAAB}\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This overloaded operator prints A/D values. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Prints outs the value fo the ADMUX and ADCSRA register values at time of conversion Also prints the current value being read by the A/D. }
+\par \pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Parameters:}
+\par \trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+serpt}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+Reference to a serial port to which the printout will be printed }\cell\cell\row\pard\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+a2d}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+Reference to the A/D driver which is being printed }\cell\row\pard\pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Returns:}
+\par \pard\plain \s49\ql\widctlpar\li720\ri0\lin720\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f8
+A reference to the same serial device on which we write information. This is used to string together things to write with }{\rtlch \ltrch\loch\lang1033\loch\f7
+<<}{\rtlch \ltrch\loch\lang1033\loch\f8
+  operators }
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 121 of file adc.cpp.}
+\par \qr\widctlpar\tqc\tx4320\tqr\tx8640\pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60\rtlch \ltrch\loch\lang1033
+
+\par \sect\sectd\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720\pgndec\sbkpage\footery1440{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 8}}}
+\par }\pard\plain \s2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+adc.h File Reference}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{{\*\bkmkstart AAAAAAAAAC}{\*\bkmkend AAAAAAAAAC}\rtlch \ltrch\loch\lang1033\loch\f7
+#include "emstream.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "FreeRTOS.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "task.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "queue.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "semphr.h"}
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Classes}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+class }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+adc}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb30\sa60{\i\rtlch \ltrch\loch\lang1033\loch\f8
+This class will run the A/D converter on an AVR processor. }{\rtlch \ltrch\loch\lang1033
+Functions}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+emstream & }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+operator<<}{\rtlch \ltrch\loch\lang1033\loch\f8
+ (emstream &, }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+adc}{\rtlch \ltrch\loch\lang1033\loch\f8
+ &)}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb30\sa60{\i\rtlch \ltrch\loch\lang1033\loch\f8
+This overloaded operator prints A/D values. }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Detailed Description}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This file contains a very simple A/D converter driver. The driver is hopefully thread safe in FreeRTOS due to the use of a mutex to prevent its use by multiple tasks at the same time. There is no protection from priority inversion, however, except for the priority elevation in the mutex.}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Revisions: }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+01-15-2008 JRR Original (somewhat useful) file }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-11-2012 JRR Less original, more useful file with FreeRTOS mutex added }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-12-2012 JRR There was a bug in the mutex code, and it has been fixed}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+License: This file is copyright 2012 by JR Ridgely and released under the Lesser GNU Public License, version 2. It intended for educational use only, but its use is not limited thereto. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition in file }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+adc.h}{\rtlch \ltrch\loch\lang1033\loch\f8
+.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Function Documentation}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+emstream& operator<< (emstream & }{\i\rtlch \ltrch\loch\lang1033
+serpt}{\rtlch \ltrch\loch\lang1033
+, adc & }{\i\rtlch \ltrch\loch\lang1033
+a2d}{\rtlch \ltrch\loch\lang1033
+)}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb240\sa60{\*\bkmkstart AAAAAAAAAD}{\*\bkmkend AAAAAAAAAD}{\*\bkmkstart AAAAAAAAAD}{\*\bkmkend AAAAAAAAAD}\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This overloaded operator prints A/D values. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Prints outs the value fo the ADMUX and ADCSRA register values at time of conversion Also prints the current value being read by the A/D. }
+\par \pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Parameters:}
+\par \trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+serpt}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+Reference to a serial port to which the printout will be printed }\cell\cell\row\pard\trowd\trql\trleft426\ltrrow\trpaddft3\trpaddt0\trpaddfl3\trpaddl0\trpaddfb3\trpaddb0\trpaddfr3\trpaddr0\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx2586\clbrdrt\brdrs\brdrw10\brdrcf3\clbrdrl\brdrs\brdrw10\brdrcf3\clbrdrb\brdrs\brdrw10\brdrcf3\clbrdrr\brdrs\brdrw10\brdrcf3\clvertalt\cellx9065\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\i\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+a2d}{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+ }\cell\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\intbl\widctlpar{\rtlch \ltrch\loch\fs20\lang1033\loch\f8
+Reference to the A/D driver which is being printed }\cell\row\pard\pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Returns:}
+\par \pard\plain \s49\ql\widctlpar\li720\ri0\lin720\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f8
+A reference to the same serial device on which we write information. This is used to string together things to write with }{\rtlch \ltrch\loch\lang1033\loch\f7
+<<}{\rtlch \ltrch\loch\lang1033\loch\f8
+  operators }
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 121 of file adc.cpp.}
+\par \pard\plain \s2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+main.cpp File Reference}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{{\*\bkmkstart AAAAAAAAAE}{\*\bkmkend AAAAAAAAAE}\rtlch \ltrch\loch\lang1033\loch\f7
+#include <stdlib.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include <avr/io.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include <avr/wdt.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include <string.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "FreeRTOS.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "task.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "queue.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "croutine.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "rs232int.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "time_stamp.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "taskbase.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "textqueue.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "taskqueue.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "taskshare.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "shares.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "task_brightness.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "task_user.h"}
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Functions}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+int }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+main}{\rtlch \ltrch\loch\lang1033\loch\f8
+ (void)}
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Variables}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+TextQueue * }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+p_print_ser_queue}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Detailed Description}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This file contains the }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+main()}{\rtlch \ltrch\loch\lang1033\loch\f8
+ code for a program which runs the ME405 board for ME405 lab 1. This program currently uses obfuscated code to use an A/D converter to convert an analog signal into an LED brightness via pulse width modulation. }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+This}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+comment}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+is}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+quite}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+messed}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+up}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+and}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+the}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+student}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+should}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+fix}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+it}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+so}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+that}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+it}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+accurately}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+reflects}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+the}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+function}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+of}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+the}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+program}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+which}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+is}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+handed}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+in}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+for}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+this}{\rtlch \ltrch\loch\lang1033\loch\f8
+  }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+assignment}{\rtlch \ltrch\loch\lang1033\loch\f8
+ .}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Revisions: }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+09-30-2012 JRR Original file was a one-file demonstration with two tasks }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-05-2012 JRR Split into multiple files, one for each task plus a main one }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-30-2012 JRR A hopefully somewhat stable version with global queue pointers and the new operator used for most memory allocation }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+11-04-2012 JRR FreeRTOS Swoop demo program changed to a sweet test suite }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+01-05-2012 JRR Program reconfigured as ME405 Lab 1 starting point }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+03-28-2014 JRR Pointers to shared variables and queues changed to references }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+01-04-2015 JRR Names of share & queue classes changed; allocated with new now}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+License: This file is copyright 2015 by JR Ridgely and released under the Lesser GNU Public License, version 2. It intended for educational use only, but its use is not limited thereto. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition in file }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+main.cpp}{\rtlch \ltrch\loch\lang1033\loch\f8
+.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Function Documentation}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+int main (void )}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb240\sa60{{\*\bkmkstart AAAAAAAAAF}{\*\bkmkend AAAAAAAAAF}\rtlch \ltrch\loch\lang1033\loch\f8
+The main function sets up the RTOS. Some test tasks are created. Then the scheduler is started up; the scheduler runs until power is turned off or there's a reset. }
+\par \pard\plain \s5\widctlpar\sb90\sa30\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\li360\ri0\lin360\rin0\fi0\sb90\sa30{\rtlch \ltrch\loch\lang1033
+Returns:}
+\par \pard\plain \s49\ql\widctlpar\li720\ri0\lin720\rin0\fi0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f8
+This is a real-time microcontroller program which doesn't return. Ever. }
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 81 of file main.cpp.}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+References p_print_ser_queue.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\b\rtlch \ltrch\loch\fs20\lang1033\loch\f6
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Variable Documentation}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+TextQueue* p_print_ser_queue}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb240\sa60{{\*\bkmkstart AAAAAAAAAG}{\*\bkmkend AAAAAAAAAG}\rtlch \ltrch\loch\lang1033\loch\f8
+This is a print queue, descended from }{\rtlch \ltrch\loch\lang1033\loch\f7
+emstream}{\rtlch \ltrch\loch\lang1033\loch\f8
+  so that things can be printed into the queue using the "<<" operator and they'll come out the other end as a stream of characters. It's used by tasks that send things to the user interface task to be printed. }
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 71 of file main.cpp.}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Referenced by main(), and task_user::run().}
+\par \qr\widctlpar\tqc\tx4320\tqr\tx8640\pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60\rtlch \ltrch\loch\lang1033
+
+\par \sect\sectd\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720\pgndec\sbkpage\footery1440{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 9}}}
+\par }\pard\plain \s2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+shares.h File Reference}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{{\*\bkmkstart AAAAAAAAAH}{\*\bkmkend AAAAAAAAAH}\rtlch \ltrch\loch\lang1033
+Variables}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+TextQueue * }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+p_print_ser_queue}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Detailed Description}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This file contains extern declarations for queues and other inter-task data communication objects used in a ME405/507/FreeRTOS project.}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Revisions: }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+09-30-2012 JRR Original file was a one-file demonstration with two tasks }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-05-2012 JRR Split into multiple files, one for each task plus a main one }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-29-2012 JRR Reorganized with global queue and shared data references }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+01-04-2014 JRR Re-reorganized, allocating shares with new now}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+License: This file is copyright 2015 by JR Ridgely and released under the Lesser GNU Public License, version 2. It intended for educational use only, but its use is not limited thereto. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition in file }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+shares.h}{\rtlch \ltrch\loch\lang1033\loch\f8
+.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Variable Documentation}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+TextQueue* p_print_ser_queue}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb240\sa60{{\*\bkmkstart AAAAAAAAAI}{\*\bkmkend AAAAAAAAAI}\rtlch \ltrch\loch\lang1033\loch\f8
+This is a print queue, descended from }{\rtlch \ltrch\loch\lang1033\loch\f7
+emstream}{\rtlch \ltrch\loch\lang1033\loch\f8
+  so that things can be printed into the queue using the "<<" operator and they'll come out the other end as a stream of characters. It's used by tasks that send things to the user interface task to be printed. }
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 71 of file main.cpp.}
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Referenced by main(), and task_user::run().}
+\par \qr\widctlpar\tqc\tx4320\tqr\tx8640\pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60\rtlch \ltrch\loch\lang1033
+
+\par \sect\sectd\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720\pgndec\sbkpage\footery1440{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 10}}}
+\par }\pard\plain \s2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+task_brightness.cpp File Reference}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{{\*\bkmkstart AAAAAAAAAJ}{\*\bkmkend AAAAAAAAAJ}\rtlch \ltrch\loch\lang1033\loch\f7
+#include "textqueue.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "task_brightness.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "shares.h"}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Detailed Description}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This file contains the code for a task class which controls the brightness of an LED using a voltage measured from the A/D as input. The fun part: the brightness that is being controlled can be on another AVR computer, with signals being sent and received via wireless transceivers.}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Revisions: }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+09-30-2012 JRR Original file was a one-file demonstration with two tasks }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-05-2012 JRR Split into multiple files, one for each task }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-25-2012 JRR Changed to a more fully C++ version with class task_sender }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-27-2012 JRR Altered from data sending task into LED blinking class }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+11-04-2012 JRR Altered again into the multi-task monstrosity }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+12-13-2012 JRR Yet again transmogrified; now it controls LED brightness}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+License: This file is copyright 2012 by JR Ridgely and released under the Lesser GNU Public License, version 2. It intended for educational use only, but its use is not limited thereto. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition in file }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_brightness.cpp}{\rtlch \ltrch\loch\lang1033\loch\f8
+.}
+\par \qr\widctlpar\tqc\tx4320\tqr\tx8640\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \sect\sectd\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720\pgndec\sbkpage\footery1440{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 11}}}
+\par }\pard\plain \s2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+task_brightness.h File Reference}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{{\*\bkmkstart AAAAAAAAAK}{\*\bkmkend AAAAAAAAAK}\rtlch \ltrch\loch\lang1033\loch\f7
+#include <stdlib.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include <avr/io.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "FreeRTOS.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "task.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "queue.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "taskbase.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "time_stamp.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "taskqueue.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "taskshare.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "rs232int.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "adc.h"}
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Classes}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+class }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_brightness}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb30\sa60{\i\rtlch \ltrch\loch\lang1033\loch\f8
+This task controls the brightness of an LED using an analog input from the A/D converter. }
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Detailed Description}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This file contains the header for a task class that controls the brightness of an LED using a voltage measured from the A/D as input. The fun part: the brightness that is being controlled can be on another AVR computer, with signals being sent and received via wireless transceivers.}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Revisions: }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+09-30-2012 JRR Original file was a one-file demonstration with two tasks }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-05-2012 JRR Split into multiple files, one for each task }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-25-2012 JRR Changed to a more fully C++ version with class task_sender }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-27-2012 JRR Altered from data sending task into LED blinking class }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+11-04-2012 JRR Altered again into the multi-task monstrosity }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+12-13-2012 JRR Yet again transmogrified; now it controls LED brightness}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+License: This file is copyright 2012 by JR Ridgely and released under the Lesser GNU Public License, version 2. It intended for educational use only, but its use is not limited thereto. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition in file }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_brightness.h}{\rtlch \ltrch\loch\lang1033\loch\f8
+.}
+\par \qr\widctlpar\tqc\tx4320\tqr\tx8640\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \sect\sectd\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720\pgndec\sbkpage\footery1440{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 12}}}
+\par }\pard\plain \s2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+task_user.cpp File Reference}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{{\*\bkmkstart AAAAAAAAAL}{\*\bkmkend AAAAAAAAAL}\rtlch \ltrch\loch\lang1033\loch\f7
+#include <avr/io.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include <avr/wdt.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "task_user.h"}
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Variables}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+const TickType_t }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+ticks_to_delay}{\rtlch \ltrch\loch\lang1033\loch\f8
+ = ((configTICK_RATE_HZ / 1000) * 5)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Detailed Description}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This file contains source code for a user interface task for a ME405/FreeRTOS test suite.}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Revisions: }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+09-30-2012 JRR Original file was a one-file demonstration with two tasks }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-05-2012 JRR Split into multiple files, one for each task }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-25-2012 JRR Changed to a more fully C++ version with class }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_user}{\rtlch \ltrch\loch\lang1033\loch\f8
+ }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+11-04-2012 JRR Modified from the data acquisition example to the test suite }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+01-04-2014 JRR Changed base class names to TaskBase, TaskShare, etc.}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+License: This file is copyright 2012 by JR Ridgely and released under the Lesser GNU Public License, version 2. It intended for educational use only, but its use is not limited thereto. }
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition in file }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_user.cpp}{\rtlch \ltrch\loch\lang1033\loch\f8
+.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Variable Documentation}
+\par \pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60{\rtlch \ltrch\loch\lang1033
+const TickType_t ticks_to_delay = ((configTICK_RATE_HZ / 1000) * 5)}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb240\sa60{{\*\bkmkstart AAAAAAAAAM}{\*\bkmkend AAAAAAAAAM}\rtlch \ltrch\loch\lang1033\loch\f8
+This constant sets how many RTOS ticks the task delays if the user's not talking. The duration is calculated to be about 5 ms. }
+\par \pard\plain \s38\qj\widctlpar\li360\ri0\lin360\rin0\fi0\sb30\sa60{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition at line 38 of file task_user.cpp.}
+\par \qr\widctlpar\tqc\tx4320\tqr\tx8640\pard\plain \s4\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs20\sb240\sa60\rtlch \ltrch\loch\lang1033
+
+\par \sect\sectd\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720\pgndec\sbkpage\footery1440{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 13}}}
+\par }\pard\plain \s2\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+task_user.h File Reference}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{{\*\bkmkstart AAAAAAAAAN}{\*\bkmkend AAAAAAAAAN}\rtlch \ltrch\loch\lang1033\loch\f7
+#include <stdlib.h>}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "FreeRTOS.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "task.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "queue.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "rs232int.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "adc.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "time_stamp.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "taskbase.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "taskqueue.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "textqueue.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "taskshare.h"}
+\par \pard\plain \s23\widctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs22\loch\f3\lang1033{\rtlch \ltrch\loch\lang1033\loch\f7
+#include "shares.h"}
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Classes}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+class }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_user}
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Macros}
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+#define }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+PROGRAM_VERSION}{\rtlch \ltrch\loch\lang1033\loch\f8{\*\bkmkstart AAAAAAAAAO}{\*\bkmkend AAAAAAAAAO}
+\~ PMS ("ME405 Lab 1 Unmodified Program V0.01 ")}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\li360\ri0\lin360\rin0\fi0\sb30\sa60{\i\rtlch \ltrch\loch\lang1033\loch\f8
+This macro defines a string that identifies the name and version of this program. }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033\widctlpar\brdrb\brdrs\brdrw5\brdrcf4\brsp20\rtlch \ltrch\loch\lang1033\loch\f8
+
+\par \pard\plain \s3\widctlpar\sb240\sa60\keepn\b\dbch\af9\dbch\af10\afs28\loch\f5\fs28\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Detailed Description}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+This file contains header stuff for a user interface task for a ME507/FreeRTOS test suite.}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Revisions: }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+09-30-2012 JRR Original file was a one-file demonstration with two tasks }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-05-2012 JRR Split into multiple files, one for each task }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+10-25-2012 JRR Changed to a more fully C++ version with class }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_user}{\rtlch \ltrch\loch\lang1033\loch\f8
+ }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+11-04-2012 JRR Modified from the data acquisition example to the test suite }
+\par \pard\plain \s67\widctlpar\tx720\li360\ri0\lin360\rin0\fi-360{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\fs20\loch\f3\lang1033\li360\ri0\lin360\rin0\fi-360\tx720{\rtlch \ltrch\loch\lang1033\loch\f8
+01-04-2014 JRR Changed base class names to TaskBase, TaskShare, etc.}
+\par \pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+License: This file is copyright 2012 by JR Ridgely and released under the Lesser GNU Public License, version 2. It intended for educational use only, but its use is not limited thereto. }
+\par \qr\widctlpar\tqc\tx4320\tqr\tx8640\pard\plain \s17\sl288\slmult1\qj\widctlpar\sb30\sa60\fs22\sb30\sa60{\rtlch \ltrch\loch\lang1033\loch\f8
+Definition in file }{\b\rtlch \ltrch\loch\lang1033\loch\f8
+task_user.h}{\rtlch \ltrch\loch\lang1033\loch\f8
+.}
+\par \sect\sectd\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1800\margrsxn1800\margtsxn1440\margbsxn1440\footery720\pgndec\sbkpage\footery1440{\footer\pard\plain \s25\qr\widctlpar\tqc\tx4320\tqr\tx8640\fs20{\rtlch \ltrch
+{\field{\*\fldinst  PAGE }{\fldrslt 14}}}
+\par }\pard\plain \s1\widctlpar\sb240\sa60\keepn\b\kerning1\dbch\af9\dbch\af10\afs28\loch\f5\fs36\sb240\sa60{\rtlch \ltrch\loch\lang1033
+Index}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af9\langfe2052\dbch\af10\afs24\alang1081\loch\f3\fs24\lang1033{\rtlch \ltrch\loch\lang1033\loch\f8
+INDEX}
+\par }
