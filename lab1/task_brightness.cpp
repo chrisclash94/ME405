@@ -73,59 +73,53 @@ void task_brightness::run (void)
 	// store its output. The variable p_my_adc only exists within this run() method,
 	// so the A/D converter cannot be used from any other function or method
 	adc* p_my_adc = new adc (p_serial);
-	motor_drv* p_motor_1 = new motor_drv(p_serial, PORTC, 0, PORTB, 6, TCCR1B);
-	
+	  //motor_drv* p_motor_1 = new motor_drv(p_serial, &PORTC, 0, &PORTB, 6, &TCCR1B, &OCR1B);
+ 	//motor_drv* p_motor_1 = new motor_drv(p_serial, &PORTD, 5, &PORTB, 5, &TCCR1A,  &OCR1A);
 
 	// Configure counter/timer 3 as a PWM for LED brightness. First set the data
 	// direction register so that the pin used for the PWM will be an output. The 
 	// pin is Port E pin 4, which is also OC3B (Output Compare B for Timer 3)
-	DDRE = (1 << 4);
+	DDRB = (1 << DDB5);
 
 	// To set 8-bit fast PWM mode we must set bits WGM30 and WGM32, which are in two
 	// different registers (ugh). We use COM3B1 and Com3B0 to set up the PWM so that
 	// the pin output will have inverted sense, that is, a 0 is on and a 1 is off; 
 	// this is needed because the LED connects from Vcc to the pin. 
-	TCCR3A = (1 << WGM30)
-			 | (1 << COM3B1) | (1 << COM3B0);
+	TCCR1A = (1 << WGM10)
+			 | (1 << COM1A1) | (1 << COM1A0);
 
 	// The CS31 and CS30 bits set the prescaler for this timer/counter to run the
 	// timer at F_CPU / 64
-	TCCR3B = (1 << WGM32)
-			 | (1 << CS31)  | (1 << CS30);
-
+	TCCR1B = (1 << WGM12)
+	
+	| (1 << CS11)  | (1 << CS10);
+        
 	// This is the task loop for the brightness control task. This loop runs until the
 	// power is turned off or something equally dramatic occurs
 	for (;;)
 	{
 		// Read the A/D converter
-		uint16_t a2d_reading = p_my_adc->read_oversampled(0,10);//read_once (0);
+		int16_t a2d_reading = p_my_adc->read_oversampled(0,10);//read_once (0);
 
 		// Convert the A/D reading into a PWM duty cycle. The A/D reading is between 0
 		// and 1023; the duty cycle should be between 0 and 255. Thus, divide by 4
-		uint16_t duty_cycle = a2d_reading / 4;
-
+		int16_t duty_cycle = a2d_reading / 4;
+		OCR1A = duty_cycle;
+                
 		// Set the brightness. Since the PWM has already been set up, we only need to
 		// put a new value into the duty cycle control register, which on an AVR is 
 		// the output compare register for a given timer/counter
-		OCR3B = duty_cycle;
 
-		p_motor_1->set_power(a2d_reading, 0CR1B);
-		
+		//p_motor_1->set_power(127);
+
 		// Increment the run counter. This counter belongs to the parent class and can
 		// be printed out for debugging purposes
 		runs++;
 		// /*
 		// debug printing code for testing the output
-		if ((runs%50) == 0)
+		if ((runs%10) == 0)
 		{
-		  *p_serial << *p_my_adc;
-		  *p_serial << "Ch 0:" << p_my_adc->read_once(0) << endl;
-		  *p_serial << *p_my_adc;
-		  *p_serial << "Ch 1:" << p_my_adc->read_once(1) << endl;
-		  *p_serial << *p_my_adc << endl;
-		  *p_serial << "Brake...." << endl;
-		  p_motor_1->brake(0, OCR1B);
-		  *p_serial << endl;
+		 
 		  
 		}
 		// */
