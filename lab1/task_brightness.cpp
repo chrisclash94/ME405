@@ -73,7 +73,7 @@ void task_brightness::run (void)
 	// store its output. The variable p_my_adc only exists within this run() method,
 	// so the A/D converter cannot be used from any other function or method
 	adc* p_my_adc = new adc (p_serial);
-	motor_drv* p_motor_1 = new motor_drv(p_serial, PORTC, 0, PORTB, 6);
+	motor_drv* p_motor_1 = new motor_drv(p_serial, PORTC, 0, PORTB, 6, TCCR1B);
 	
 
 	// Configure counter/timer 3 as a PWM for LED brightness. First set the data
