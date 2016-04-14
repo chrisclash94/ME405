@@ -36,24 +36,26 @@
 #include "queue.h"                          // Header for FreeRTOS queues
 #include "semphr.h"                         // Header for FreeRTOS semaphores
 
+#define OC_1A PB5  
+#define 0C_1B PB6
+
 /** @brief This class defines the motor driver
- *  @detials Defines the functions of the motor driver, including the constructor, power 
- *  set and breaking functions needed in a typical motor
+ *  @detials Defines the functions of the motor driver, including the constructor, set_power (duty cycle set) 
+ *  brake functions, typical to basic motor functions. 
  */ 
-class motor
+class motor_drv
 {
          protected
             //Pointer tot he serial port
             emstream* ptr_to_serial;
 	    
 	 public
-	     //Fill in numm if parameters arent given
-	     motor (emstream* = NULL);
+	     //Sets the Ports of the ATmega to connect the motor driver chip
+motor_drv::motor_drv(emstream* p_serial_port, volatile uint8_t* port_select, volatile uint8_t port_pin_offset, volatile uint8_t* pwm_select, volatile uint8_t pwm_pin_select)	     
+	     //Set the duty cycle and direction of motor
+	     uint16_t set_power(int8_t torque);
 	     
-	     //Set the torque for the motors. R 
-	     uint16_t set_power(int8_t);
-	     
-	     //This functions forces the motor to brake
+	     //Slows the motor until itt reaches a stop
 	     void brake(void);	    
 };
 
