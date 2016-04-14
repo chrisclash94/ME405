@@ -33,81 +33,61 @@
  *  @param p_serial_port A pointer to the serial port which writes debugging info. 
  */
 
-motor_drv::motor_drv(emstream* p_serial_port, 
+motor_drv:: motor_drv(emstream* p_serial_port, 
 		     volatile uint8_t* port_select,      uint8_t port_pin_offset, 
 		     volatile uint8_t* pwm_select,       uint8_t pwm_pin_select,
-		     u_int8_t TCCRNO);
+		     volatile uint8_t* TCCRNO,           volatile uint16_t* OCRNO)
 {      
-   ptr_to_serial = p_serial_port;             
-   volatile uint8_t* p_motor_port = port_select;        //Pointer to port on ATmega that connects to motor driver
-   volatile uint8_t* p_motor_dir = (p_motor_port - 1);  //Pointer to I/O register of port
-   volatile uint8_t  pin_shift = port_bitshift ;        //Sets the pin shift for INA, INB, DIAG pins
-   volatile uint8_t* p_pwm = pwm_select;                //Pointer to the PWM Port on ATmega
-   volatile uint8_t* p_pwm_dir = (p_pwm - 1);           //Pointer to the PWM direction register
-   volatile uint8_t OC_XX = pwm_pin_select;             //Selects pin for OCXX (OC1A)
-   
-   *p_motor_port &= ~(0b011 << offset);          //Sets INA, INB to 0, enables DIAG (pull up resistor;
-   *p_motor_dir |= (0b111 << offset);            //Sets INA, INB to outputs, DIAG to input
+    ptr_to_serial = p_serial_port;             
+    p_port = port_select;        //Pointer to port on ATmega that connects to motor driver
+    p_motor_dir = (p_port - 1);  //Pointer to I/O register of port
+    pin_shift = port_pin_offset;        //Sets the pin shift for INA, INB, DIAG pins
+    p_pwm = pwm_select;                //Pointer to the PWM Port on ATmega
+    p_pwm_dir = (p_pwm - 1);           //Pointer to the PWM direction register
+    OC_XX = pwm_pin_select;             //Selects pin for OCXX (OC1A)
+    OCR = OCRNO;
+    *p_motor_dir |= (0b111 << pin_shift);     //Sets INA, INB to outputs, DIAG to input
+    *p_port &= ~(0b11 << pin_shift);          //Sets INA, INB to 0
+    *p_port |= (0b100 << pin_shift);  
+    *p_pwm_dir |= (0x1 << OC_XX);  		//Sets OCXX low
+    *p_pwm &= ~(0x1 << OC_XX);
     
-   *p_pwm_dir &= ~(0x01 << 0C_XX);		//Sets OCXX low
-   *p_pwm |= (0x1 < 0C_XX);                      //Sets OCXX to output
-   TCCRNO = (1 << WGM13) | (1 << WGM12) | (1 << WGM11);
+    TCC = TCCRNO;//Sets OCXX to output
+    *TCC = (1 << WGM11) | (1 << COM1A1) | (1 << COM1A0); 
+    TCC = TCCRNO + 1;
+    *TCC =  (1 << WGM13) | (1 << WGM12) | (1 << CS11) | (1 << CS10);
+  
 }
 
   
-motor_drv:: set_power(int16_t torque, u_int16_t OCRNO) 
+void motor_drv:: set_power(int16_t torque)	      
 {
-   u_int8_t duty_cycle; 
+   int16_t duty_cycle; 
    
    //Checks for a postitive input, which indicates forward motion
    if(torque < 0)
    {
-      *p_port &= ~(0b11 << offset);    // clears INA INB
-      *p_port |= (0b1 << offset);      // sets INA high
+      *p_port &= ~(0b11 << pin_shift);    // clears INA INB
+      *p_port |= (0b1 << pin_shift);      // sets INA high
    }
    //Checks for negative input, which indicated reverse motion
    else if(torque > 0)
    { 
-      *p_port &= ~(0b11 << offset);     // clears INA INB
-      *p_port |= (0x10 << offset);     // sets INB hight
+      *p_port &= ~(0b11 << pin_shift);     // clears INA INB
+      *p_port |= (0x10 << pin_shift);     // sets INB hight
    } 
    //Zero input inidcates no motion
    else
    {
-      *p_port &= ~(0b11 << offset);     //clears INA INB
+      *p_port &= ~(0b11 << pin_shift);     //clears INA INB
    }
     
    duty_cycle = abs(torque);
    
-   switch (OCRNO) 
-   {   
-      case (OCR1A):
-        OCR1A = duty_cycle;
-        break;
-	
-      case (OCR1B):
-        OCR1B = duty_cycle;
-	break;
-
-      case (OCR3A):
-        OCR3A = duty_cycle;
-	break;
-
-      case (OCR3B):
-	OCR3B = duty_cycle;
-	break;
-	
-      case (OCR5A):
-	OCR5A = duty_cycle;
-	break;
-        
-      case (OCR5B):
-	OCR5B = duty_cycle;
-	break;
-   }
+   *OCR = duty_cycle;
 }
 
-motor_drv:: brake(int16_t strength, u_int16_t OCRNO)
+void motor_drv:: brake()
 {
-   set_power(0, OCRNO);
+   set_power(0);
 }
