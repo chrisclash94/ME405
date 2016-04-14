@@ -73,6 +73,8 @@ void task_brightness::run (void)
 	// store its output. The variable p_my_adc only exists within this run() method,
 	// so the A/D converter cannot be used from any other function or method
 	adc* p_my_adc = new adc (p_serial);
+	motor_drv* p_motor_1 = new motor_drv(p_serial, PORTC, 0, PORTB, 6);
+	
 
 	// Configure counter/timer 3 as a PWM for LED brightness. First set the data
 	// direction register so that the pin used for the PWM will be an output. The 
@@ -107,19 +109,24 @@ void task_brightness::run (void)
 		// the output compare register for a given timer/counter
 		OCR3B = duty_cycle;
 
+		p_motor_1->set_power(a2d_reading, 0CR1B);
+		
 		// Increment the run counter. This counter belongs to the parent class and can
 		// be printed out for debugging purposes
 		runs++;
 		// /*
 		// debug printing code for testing the output
-		if ((runs%10) == 0)
+		if ((runs%50) == 0)
 		{
 		  *p_serial << *p_my_adc;
 		  *p_serial << "Ch 0:" << p_my_adc->read_once(0) << endl;
 		  *p_serial << *p_my_adc;
 		  *p_serial << "Ch 1:" << p_my_adc->read_once(1) << endl;
-		  *p_serial << *p_my_adc;
+		  *p_serial << *p_my_adc << endl;
+		  *p_serial << "Brake...." << endl;
+		  p_motor_1->brake(0, OCR1B);
 		  *p_serial << endl;
+		  
 		}
 		// */
 		// This is a method we use to cause a task to make one run through its task
