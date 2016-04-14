@@ -47,7 +47,7 @@
 
 #include "rs232int.h"                       // ME405/507 library for serial comm.
 #include "adc.h"                            // Header for A/D converter driver class
-
+#include "motor_drv.h"			    // Header for motor driver class
 
 //-------------------------------------------------------------------------------------
 /** @brief   This task controls the brightness of an LED using an analog input from 
