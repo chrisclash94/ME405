@@ -35,7 +35,8 @@
 
 motor_drv::motor_drv(emstream* p_serial_port, 
 		     volatile uint8_t* port_select,      uint8_t port_pin_offset, 
-		     volatile uint8_t* pwm_select,       uint8_t pwm_pin_select) 
+		     volatile uint8_t* pwm_select,       uint8_t pwm_pin_select,
+		     u_int8_t TCCRNO);
 {      
    ptr_to_serial = p_serial_port;             
    volatile uint8_t* p_motor_port = port_select;        //Pointer to port on ATmega that connects to motor driver
@@ -50,6 +51,7 @@ motor_drv::motor_drv(emstream* p_serial_port,
     
    *p_pwm_dir &= ~(0x01 << 0C_XX);		//Sets OCXX low
    *p_pwm |= (0x1 < 0C_XX);                      //Sets OCXX to output
+   TCCRNO = (1 << WGM13) | (1 << WGM12) | (1 << WGM11) | (1 << WGM10);
 }
 
   
