@@ -51,7 +51,7 @@ motor_drv::motor_drv(emstream* p_serial_port,
     
    *p_pwm_dir &= ~(0x01 << 0C_XX);		//Sets OCXX low
    *p_pwm |= (0x1 < 0C_XX);                      //Sets OCXX to output
-   TCCRNO = (1 << WGM13) | (1 << WGM12) | (1 << WGM11) | (1 << WGM10);
+   TCCRNO = (1 << WGM13) | (1 << WGM12) | (1 << WGM11);
 }
 
   
