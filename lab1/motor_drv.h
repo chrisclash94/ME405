@@ -1,5 +1,5 @@
 //======================================================================================
-/** @file adc.h
+/** @file motor_drv.h
  *    This file contains a very simple A/D converter driver. The driver is hopefully
  *    thread safe in FreeRTOS due to the use of a mutex to prevent its use by multiple
  *    tasks at the same time. There is no protection from priority inversion, however,
@@ -36,8 +36,8 @@
 #include "queue.h"                          // Header for FreeRTOS queues
 #include "semphr.h"                         // Header for FreeRTOS semaphores
 
-#define OC_1A PB5  
-#define 0C_1B PB6
+#define OC_1A 5  
+#define OC_1B 6
 
 /** @brief This class defines the motor driver
  *  @detials Defines the functions of the motor driver, including the constructor, set_power (duty cycle set) 
@@ -45,21 +45,32 @@
  */ 
 class motor_drv
 {
-         protected
+         protected:
             //Pointer tot he serial port
             emstream* ptr_to_serial;
+	    volatile uint8_t* p_port;              //Pointer to port on ATmega that connects to motor driver
+            volatile uint8_t* p_motor_dir;         //Pointer to I/O register of port
+            volatile uint8_t  pin_shift;           //Sets the pin shift for INA, INB, DIAG pins
+            volatile uint8_t* p_pwm;               //Pointer to the PWM Port on ATmega
+            volatile uint8_t* p_pwm_dir;           //Pointer to the PWM direction register
+            volatile uint8_t  OC_XX;              //Selects pin for OCXX (OC1A)
+	    volatile uint16_t* OCR;
+	    volatile uint8_t* TCC;
 	    
-	 public
+         public:
 	     //Sets the Ports of the ATmega to connect the motor driver chip
-motor_drv::motor_drv(emstream* p_serial_port, volatile uint8_t* port_select, volatile uint8_t port_pin_offset, volatile uint8_t* pwm_select, volatile uint8_t pwm_pin_select)	     
+             motor_drv(emstream* p_serial_port, 
+		     volatile uint8_t* port_select,      uint8_t port_pin_offset, 
+		     volatile uint8_t* pwm_select,       uint8_t pwm_pin_select,
+		     volatile uint8_t* TCCRNO,           volatile uint16_t* OCRNO);	     
 	     //Set the duty cycle and direction of motor
-	     uint16_t set_power(int8_t torque);
-	     
+             void set_power(int16_t torque); 	     
 	     //Slows the motor until itt reaches a stop
-	     void brake(void);	    
+	     void brake();    
+  
 };
 
-emstream& operator<< (emstream&, motor&);
+emstream& operator<< (emstream&, motor_drv&);
 
 #endif
 
