@@ -74,26 +74,23 @@ void task_brightness::run (void)
 	// so the A/D converter cannot be used from any other function or method
 	adc* p_my_adc = new adc (p_serial);
 	  //motor_drv* p_motor_1 = new motor_drv(p_serial, &PORTC, 0, &PORTB, 6, &TCCR1B, &OCR1B);
- 	//motor_drv* p_motor_1 = new motor_drv(p_serial, &PORTD, 5, &PORTB, 5, &TCCR1A,  &OCR1A);
+ 	motor_drv* p_motor_1 = new motor_drv(p_serial, &PORTD, 5, &PORTB, 5, &TCCR1A,  &OCR1A);
 
 	// Configure counter/timer 3 as a PWM for LED brightness. First set the data
 	// direction register so that the pin used for the PWM will be an output. The 
 	// pin is Port E pin 4, which is also OC3B (Output Compare B for Timer 3)
-	DDRB = (1 << DDB5);
+//	DDRB = (1 << DDB5);
 
 	// To set 8-bit fast PWM mode we must set bits WGM30 and WGM32, which are in two
 	// different registers (ugh). We use COM3B1 and Com3B0 to set up the PWM so that
 	// the pin output will have inverted sense, that is, a 0 is on and a 1 is off; 
 	// this is needed because the LED connects from Vcc to the pin. 
-	TCCR1A = (1 << WGM10)
-			 | (1 << COM1A1) | (1 << COM1A0);
+//	TCCR1A = (1 << WGM10) | (1 << COM1A1) | (1 << COM1A0);
 
 	// The CS31 and CS30 bits set the prescaler for this timer/counter to run the
 	// timer at F_CPU / 64
-	TCCR1B = (1 << WGM12)
-	
-	| (1 << CS11)  | (1 << CS10);
-        
+//	TCCR1B = (1 << WGM12) | (1 << CS11)  | (1 << CS10);
+
 	// This is the task loop for the brightness control task. This loop runs until the
 	// power is turned off or something equally dramatic occurs
 	for (;;)
@@ -110,8 +107,6 @@ void task_brightness::run (void)
 		// put a new value into the duty cycle control register, which on an AVR is 
 		// the output compare register for a given timer/counter
 
-		//p_motor_1->set_power(127);
-
 		// Increment the run counter. This counter belongs to the parent class and can
 		// be printed out for debugging purposes
 		runs++;
@@ -119,8 +114,20 @@ void task_brightness::run (void)
 		// debug printing code for testing the output
 		if ((runs%10) == 0)
 		{
-		 
-		  
+		   *p_serial << "PORTD : " << PORTD << endl;
+		   delay_ms(1000);
+		   p_motor_1->set_power(100);
+		   *p_serial << "PORTD : " << PORTD << endl;
+		   
+		   delay_ms(1000);
+		   p_motor_1->set_power(0);
+  		   *p_serial << "PORTD : " << PORTD << endl;
+		   
+		   delay_ms(1000);
+		   p_motor_1->set_power(-100);
+		   *p_serial << "PORTD : " << PORTD << endl;
+		   
+		   *p_serial << endl;
 		}
 		// */
 		// This is a method we use to cause a task to make one run through its task
