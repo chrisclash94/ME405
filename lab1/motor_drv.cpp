@@ -46,16 +46,26 @@ motor_drv:: motor_drv(emstream* p_serial_port,
     p_pwm_dir = (p_pwm - 1);           //Pointer to the PWM direction register
     OC_XX = pwm_pin_select;             //Selects pin for OCXX (OC1A)
     OCR = OCRNO;
-    *p_motor_dir |= (0b111 << pin_shift);     //Sets INA, INB to outputs, DIAG to input
-    *p_port &= ~(0b11 << pin_shift);          //Sets INA, INB to 0
-    *p_port |= (0b100 << pin_shift);  
-    *p_pwm_dir |= (0x1 << OC_XX);  		//Sets OCXX low
-    *p_pwm &= ~(0x1 << OC_XX);
     
+    *p_motor_dir &= ~(0b100 << pin_shift);   //Sets DIAG to input
+    *p_motor_dir |= (0b11 << pin_shift);     //Sets INA INB to output
+    
+    *p_port &= ~(0b11 << pin_shift);         //Sets INA, INB to 0
+    *p_port |= (0b100 << pin_shift);         //Turn on DIAG pullup resistor
+    
+    *p_pwm_dir |= (0x1 << OC_XX);            //Sets pwm to output          
+    *p_pwm &= ~(0x1 << OC_XX);               //Sets OC1(A/B) low
+    
+    *p_serial_port << "TCCR1A : " << TCCR1A << endl;
+
     TCC = TCCRNO;//Sets OCXX to output
-    *TCC = (1 << WGM11) | (1 << COM1A1) | (1 << COM1A0); 
+    *TCC = (1 << WGM10) | (1 << COM1A1) | (1 << COM1A0); 
+    *p_serial_port << "TCCR1A : " << TCCR1A << endl;
+    *p_serial_port << "TCCR1B : " << TCCR1B << endl;
+    
     TCC = TCCRNO + 1;
-    *TCC =  (1 << WGM13) | (1 << WGM12) | (1 << CS11) | (1 << CS10);
+    *TCC = (1 << WGM12) | (1 << CS11) | (1 << CS10);
+    *p_serial_port << "TCCR1B : " << TCCR1B << endl;
   
 }
 
@@ -65,16 +75,16 @@ void motor_drv:: set_power(int16_t torque)
    int16_t duty_cycle; 
    
    //Checks for a postitive input, which indicates forward motion
-   if(torque < 0)
+   if(torque > 0)
    {
       *p_port &= ~(0b11 << pin_shift);    // clears INA INB
       *p_port |= (0b1 << pin_shift);      // sets INA high
    }
    //Checks for negative input, which indicated reverse motion
-   else if(torque > 0)
+   else if(torque < 0)
    { 
       *p_port &= ~(0b11 << pin_shift);     // clears INA INB
-      *p_port |= (0x10 << pin_shift);     // sets INB hight
+      *p_port |= (0b10 << pin_shift);     // sets INB hight
    } 
    //Zero input inidcates no motion
    else
