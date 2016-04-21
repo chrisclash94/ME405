@@ -1,4 +1,4 @@
-/*************************************************************************************
+//*************************************************************************************
 /** @file motor_drv.cpp
  *    This file contains a very generic motor driver. 
  *  Revisions:
@@ -28,9 +28,15 @@
 #include "adc.h"                            // Include header for the A/D class
 #include "motor_drv.h"
 //-------------------------------------------------------------------------------------
-/** \brief This constructor sets up a motor driver
- *  \details The motor driver is initialized so that the board sends signals to the motor chip
- *  @param p_serial_port A pointer to the serial port which writes debugging info. 
+/** @brief This constructor sets up a motor driver
+ *  @details The motor driver is initialized so that the board sends signals to a given motor chip
+ *  @param  p_serial_port Pointer to the serial output port  
+ *  @param  uint8_t* port_select pointer to port on ATmega that connects to motor driver
+ *  @param  port_pin_offset Pointer to I/O register of port 
+ *  @param  pwm_select Sets the pin shift for INA, INB, DIAG pins
+ *  @param  pwm_pin_select Pointer to the PWM Port on ATmega
+ *  @param  TCCRNO Pointer to the PWM direction register
+ *  @param  OCRNO  Selects pin for OCXX (OC1A)
  */
 
 motor_drv:: motor_drv(emstream* p_serial_port, 
@@ -38,13 +44,13 @@ motor_drv:: motor_drv(emstream* p_serial_port,
 		     volatile uint8_t* pwm_select,       uint8_t pwm_pin_select,
 		     volatile uint8_t* TCCRNO,           volatile uint16_t* OCRNO)
 {      
-    ptr_to_serial = p_serial_port;             
-    p_port = port_select;        //Pointer to port on ATmega that connects to motor driver
-    p_motor_dir = (p_port - 1);  //Pointer to I/O register of port
-    pin_shift = port_pin_offset;        //Sets the pin shift for INA, INB, DIAG pins
-    p_pwm = pwm_select;                //Pointer to the PWM Port on ATmega
-    p_pwm_dir = (p_pwm - 1);           //Pointer to the PWM direction register
-    OC_XX = pwm_pin_select;             //Selects pin for OCXX (OC1A)
+    ptr_to_serial = p_serial_port;               
+    p_port = port_select;              
+    p_motor_dir = (p_port - 1);        
+    pin_shift = port_pin_offset;       
+    p_pwm = pwm_select;                
+    p_pwm_dir = (p_pwm - 1);           
+    OC_XX = pwm_pin_select;         
     OCR = OCRNO;
     
     *p_motor_dir &= ~(0b100 << pin_shift);   //Sets DIAG to input
@@ -59,7 +65,7 @@ motor_drv:: motor_drv(emstream* p_serial_port,
     *p_serial_port << "TCCR1A : " << TCCR1A << endl;
 
     TCC = TCCRNO;//Sets OCXX to output
-    *TCC = (1 << WGM10) | (1 << COM1A1) | (1 << COM1A0); 
+    *TCC = (1 << WGM10) | (1 << COM1A1) | (0 << COM1A0); 
     *p_serial_port << "TCCR1A : " << TCCR1A << endl;
     *p_serial_port << "TCCR1B : " << TCCR1B << endl;
     
@@ -69,10 +75,14 @@ motor_drv:: motor_drv(emstream* p_serial_port,
   
 }
 
-  
+//-------------------------------------------------------------------------------------
+/** @brief This functions sets the "power" of the motor
+ *  @details Sets the direction of the motor and runs at a speed according to the set duty cycle
+ *  @param torque a signed valued that determines the direction and is passed as the duty cylce
+ */  
 void motor_drv:: set_power(int16_t torque)	      
 {
-   int16_t duty_cycle; 
+   uint16_t duty_cycle; 
    
    //Checks for a postitive input, which indicates forward motion
    if(torque > 0)
@@ -96,6 +106,11 @@ void motor_drv:: set_power(int16_t torque)
    
    *OCR = duty_cycle;
 }
+
+//-------------------------------------------------------------------------------------
+/** @brief This functions causes the motor to stop
+ *  @details Calls the set power function with a value of 0 to force the motor to stop 
+ */
 
 void motor_drv:: brake()
 {
