@@ -40,32 +40,43 @@
 #define OC_1B 6
 
 /** @brief This class defines the motor driver
- *  @detials Defines the functions of the motor driver, including the constructor, set_power (duty cycle set) 
- *  brake functions, typical to basic motor functions. 
+ *  @detials The class includes the motor constructor and the set_power (duty cycle set) 
+ *  and brake functions. These are standard motor functions. 
  */ 
 class motor_drv
 {
          protected:
-            //Pointer tot he serial port
-            emstream* ptr_to_serial;
-	    volatile uint8_t* p_port;              //Pointer to port on ATmega that connects to motor driver
-            volatile uint8_t* p_motor_dir;         //Pointer to I/O register of port
-            volatile uint8_t  pin_shift;           //Sets the pin shift for INA, INB, DIAG pins
-            volatile uint8_t* p_pwm;               //Pointer to the PWM Port on ATmega
-            volatile uint8_t* p_pwm_dir;           //Pointer to the PWM direction register
-            volatile uint8_t  OC_XX;              //Selects pin for OCXX (OC1A)
-	    volatile uint16_t* OCR;
-	    volatile uint8_t* TCC;
+            
+	    ///Pointer to the serial port
+            emstream* ptr_to_serial;              
+	    ///Pointer to port on ATmega that connects to motor driver
+	    volatile uint8_t* p_port;             
+            ///Pointer to I/O register of port
+            volatile uint8_t* p_motor_dir;        
+            ///Sets the pin shift for INA, INB, DIAG pins
+            volatile uint8_t  pin_shift;        
+            ///Pointer to the PWM Port on ATmega
+            volatile uint8_t* p_pwm;               
+            ///Pointer to the PWM direction register
+            volatile uint8_t* p_pwm_dir;          
+            ///Selects pin for OCXX (OC1A)
+            volatile uint8_t  OC_XX;             
+	    ///Pointer to the output register
+	    volatile uint16_t* OCR;             
+	    ///Pointer to pwm
+	    volatile uint8_t* TCC;            
+	    
 	    
          public:
-	     //Sets the Ports of the ATmega to connect the motor driver chip
+	   
+	    //Sets the Ports of the ATmega to connect the motor driver chip
              motor_drv(emstream* p_serial_port, 
 		     volatile uint8_t* port_select,      uint8_t port_pin_offset, 
 		     volatile uint8_t* pwm_select,       uint8_t pwm_pin_select,
 		     volatile uint8_t* TCCRNO,           volatile uint16_t* OCRNO);	     
-	     //Set the duty cycle and direction of motor
+	    //Set the duty cycle and direction of motor
              void set_power(int16_t torque); 	     
-	     //Slows the motor until itt reaches a stop
+	     //Slows the motor until it reaches a stop
 	     void brake();    
   
 };
