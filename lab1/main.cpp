@@ -54,7 +54,8 @@
 #include "shares.h"                         // Global ('extern') queue declarations
 #include "task_brightness.h"                // Header for the data acquisition task
 #include "task_user.h"                      // Header for user interface task
-
+#include "task_motor.h"
+#include "motor_drv.h"
 
 // Declare the queues which are used by tasks to communicate with each other here. 
 // Each queue must also be declared 'extern' in a header file which will be read 
@@ -69,6 +70,8 @@
  *  task to be printed. 
  */
 TextQueue* p_print_ser_queue;
+TaskShare<int16_t>* p_share_power1;
+TaskShare<int16_t>* p_share_power2;
 
 
 //=====================================================================================
@@ -94,16 +97,19 @@ int main (void)
 
 	// Create the queues and other shared data items here
 	p_print_ser_queue = new TextQueue (32, "Print", p_ser_port, 10);
+	
+	p_share_power1 = new TaskShare<int16_t> ("Power Motor Share 1");
+	p_share_power2 = new TaskShare<int16_t> ("Power Motor Share 1");
 
 	// The user interface is at low priority; it could have been run in the idle task
 	// but it is desired to exercise the RTOS more thoroughly in this test program
 	new task_user ("UserInt", task_priority (1), 260, p_ser_port);
 
 	// Create a task which reads the A/D and adjusts an LED's brightness accordingly
-	new task_brightness ("Bright", task_priority (2), 280, p_ser_port);
-
+	//new task_brightness ("Bright", task_priority (2), 280, p_ser_port);
+        new task_motor ("Motor1:", task_priority(2), 280, 1, p_ser_port);
+	new task_motor ("Motor2:", task_priority(2), 280, 2, p_ser_port); 
 	// Here's where the RTOS scheduler is started up. It should never exit as long as
 	// power is on and the microcontroller isn't rebooted
 	vTaskStartScheduler ();
 }
-
